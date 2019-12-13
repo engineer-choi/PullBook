@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
             <RelativeLayout
+                android:id="@+id/rl_read_book"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
