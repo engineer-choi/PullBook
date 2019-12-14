@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PullBook</string>
+
+
+    <!--activity_read_book 추후 로케일 적용하기-->
+    <string name="tb_query">책 제목이 어떻게 되나요?</string>
+    <string name="et_book_title">제목</string>
 </resources>
