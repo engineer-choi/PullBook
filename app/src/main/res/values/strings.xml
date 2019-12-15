@@ -8,4 +8,7 @@
 
     <!--activity_my_library-->
     <string name="et_search_book">책 제목 검색</string>
+
+    <!--activity_search_and_add_book-->
+    <string name="btn_add_to_my_library">추가하기</string>
 </resources>

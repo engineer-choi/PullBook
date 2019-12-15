@@ -1,7 +1,8 @@
-package kr.chjdevelop.pullbook
+package kr.chjdevelop.pullbook.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kr.chjdevelop.pullbook.R
 
 class ReadBookActivity : AppCompatActivity() {
 

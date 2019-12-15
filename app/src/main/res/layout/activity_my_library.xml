@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MyLibraryActivity">
+    tools:context=".ui.MyLibraryActivity">
 
     <!--검색 부분-->
     <RelativeLayout
@@ -37,4 +37,10 @@
             android:layout_centerVertical="true"
             android:src="@drawable/ic_add"/>
     </RelativeLayout>
+
+    <!--내가 읽은 책 목록들 보주는 화면(아이템 정의 필요 및 형태도 기획 필요)-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

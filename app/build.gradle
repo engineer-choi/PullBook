@@ -52,4 +52,6 @@ dependencies {
 
 //동그란 이미지 커스텀 뷰 라이브러리 : https://github.com/hdodenhof/CircleImageView
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+    //카드뷰
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

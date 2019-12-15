@@ -1,9 +1,10 @@
-package kr.chjdevelop.pullbook
+package kr.chjdevelop.pullbook.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kr.chjdevelop.pullbook.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,11 +15,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun init(){
         rl_read_book.setOnClickListener{
-            val intent = Intent(this,ReadBookActivity::class.java)
+            val intent = Intent(this, ReadBookActivity::class.java)
             startActivity(intent)
         }
         rl_library.setOnClickListener{
-            val intent = Intent(this,MyLibraryActivity::class.java)
+            val intent = Intent(this, MyLibraryActivity::class.java)
             startActivity(intent)
         }
     }
