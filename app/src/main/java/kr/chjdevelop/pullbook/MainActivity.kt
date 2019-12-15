@@ -17,5 +17,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,ReadBookActivity::class.java)
             startActivity(intent)
         }
+        rl_library.setOnClickListener{
+            val intent = Intent(this,MyLibraryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
