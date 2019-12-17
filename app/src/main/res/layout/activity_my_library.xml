@@ -5,23 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_background"
     tools:context=".ui.my_library.MyLibraryActivity">
 
     <!--검색 부분-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:background="@drawable/gradient_background"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
         <EditText
             android:id="@+id/et_search_my_book"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_corner"
             android:layout_marginRight="40dp"
-            android:fontFamily="@font/scdream"
-            android:textFontWeight="400"
-            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:inputType="text"
             android:hint="@string/et_search_book"/>
         <ImageView
@@ -42,8 +47,66 @@
     </RelativeLayout>
 
     <!--내가 읽은 책 목록들 보주는 화면(아이템 정의 필요 및 형태도 기획 필요)-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_reading"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/tv_add_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:text="@string/tv_add_recommend"
+        android:textSize="14dp"/>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_my_library"
+        android:visibility="gone"
+        android:id="@+id/rv_my_library_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--다 읽은 책 목록-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_finish"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/tv_yet"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textColor="@color/grey"
+        android:text="@string/tv_yet"
+        android:gravity="center"
+        android:textSize="14dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_my_library_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

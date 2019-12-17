@@ -14,8 +14,17 @@
     <!--activity_my_library-->
     <string name="et_search_book">책 제목 검색</string>
     <string name="search_book_recommend">책을 검색하세요!</string>
+    <string name="tv_reading">Reading</string>
+    <string name="tv_finish">Finish</string>
+    <string name="tv_add_recommend">책을 추가하세요!</string>
+    <string name="tv_yet">아직 완독한 책이 없습니다</string>
 
     <!--activity_search_and_add_book-->
     <string name="btn_add_to_my_library">추가하기</string>
     <string name="added_sentence">추가 되었습니다!</string>
+
+    <!--activity_my_book-->
+    <string name="alarm">알림</string>
+    <string name="delete">삭제</string>
+    <string name="description">요약</string>
 </resources>

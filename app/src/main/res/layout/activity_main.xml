@@ -26,8 +26,6 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/read_book"
-                    android:fontFamily="@font/scdream"
-                    android:textFontWeight="900"
                     style="@style/title_text_white"/>
 
                 <ImageView
@@ -41,7 +39,7 @@
                 android:id="@+id/rl_library"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPastelPink"
+                android:background="@color/colorPrimary"
                 android:padding="40dp"
                 android:layout_weight="1">
                 <ImageView
@@ -56,8 +54,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:fontFamily="@font/scdream"
-                    android:textFontWeight="900"
                     android:text="@string/library"
                     style="@style/title_text_white"/>
 
@@ -71,7 +67,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorSky"
+        android:background="@color/colorPrimary"
         android:padding="40dp"
         android:layout_weight="1">
         <ImageView
@@ -87,8 +83,6 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/book_news"
-            android:fontFamily="@font/scdream"
-            android:textFontWeight="900"
             style="@style/title_text_white"/>
 
         <ImageView
@@ -101,7 +95,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorRym"
+        android:background="@color/colorPrimary"
         android:padding="40dp"
         android:layout_weight="1">
         <ImageView
@@ -116,8 +110,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/scdream"
-            android:textFontWeight="900"
             android:text="@string/setting"
             style="@style/title_text_white"/>
 

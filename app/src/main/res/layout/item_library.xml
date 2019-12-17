@@ -5,9 +5,10 @@
     android:layout_width="120dp"
     android:minWidth="120dp"
     android:maxWidth="120dp"
-    android:layout_margin="16dp"
     android:gravity="center"
-    android:layout_height="wrap_content">
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item_library">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,24 +16,22 @@
         <ImageView
             android:id="@+id/img_book"
             android:layout_width="120dp"
-            android:layout_height="160dp"
+            android:layout_height="180dp"
             android:src="@drawable/no_img"
             android:minWidth="120dp"
             android:maxWidth="120dp"
-            android:minHeight="160dp"
-            android:maxHeight="160dp"
+            android:minHeight="180dp"
+            android:maxHeight="180dp"
             android:adjustViewBounds="true"/>
         <TextView
             android:id="@+id/tv_read_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2019/12/16"
-            android:background="#80696969"
+            android:background="#88493932"
             android:textColor="@color/white"
-            android:fontFamily="@font/scdream"
             android:layout_gravity="end"
             android:gravity="center"
-            android:textFontWeight="400"
             android:layout_alignBottom="@+id/img_book"
             android:layout_centerHorizontal="true"
             android:textSize="12dp"/>
@@ -45,9 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Book Title"
-        android:fontFamily="@font/scdream"
-        android:textFontWeight="900"
         android:autoSizeTextType="uniform"
+        android:textColor="@color/colorPrimary"
         android:ellipsize="end"
         android:maxLines="1"
         android:textStyle="bold"
@@ -57,9 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:fontFamily="@font/scdream"
         android:ellipsize="end"
-        android:textFontWeight="400"
         android:text="Book author"
         android:textSize="10dp"/>
 

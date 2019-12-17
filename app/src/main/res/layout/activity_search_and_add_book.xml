@@ -5,23 +5,29 @@
     android:id="@+id/ll_search_and_add_book"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
     android:orientation="vertical">
 
     <!--검색 부분-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
         android:padding="16dp">
         <EditText
             android:id="@+id/et_search_book"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_corner"
-            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:inputType="text"
-            android:fontFamily="@font/scdream"
-            android:textFontWeight="400"
             android:hint="@string/et_search_book"/>
         <ImageView
             android:id="@+id/img_search_btn"
