@@ -25,7 +25,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="책 읽기"
+                    android:text="@string/read_book"
+                    android:fontFamily="@font/scdream"
+                    android:textFontWeight="900"
                     style="@style/title_text_white"/>
 
                 <ImageView
@@ -54,7 +56,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="서재"
+                    android:fontFamily="@font/scdream"
+                    android:textFontWeight="900"
+                    android:text="@string/library"
                     style="@style/title_text_white"/>
 
                 <ImageView
@@ -82,7 +86,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="책 소식"
+            android:text="@string/book_news"
+            android:fontFamily="@font/scdream"
+            android:textFontWeight="900"
             style="@style/title_text_white"/>
 
         <ImageView
@@ -110,7 +116,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="환경설정"
+            android:fontFamily="@font/scdream"
+            android:textFontWeight="900"
+            android:text="@string/setting"
             style="@style/title_text_white"/>
 
         <ImageView

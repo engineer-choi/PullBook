@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 
-fun Toast.sendToast(context : Context, message : String){
+fun Toast.sendToast(context : Context, message : Int){
     val inflater : LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
     val layout = inflater.inflate(R.layout.blue_toast, (context as Activity).findViewById<ViewGroup>(R.id.blue_toast_container))
 
-    layout.findViewById<TextView>(R.id.tv_toast_message).text = message
+    layout.findViewById<TextView>(R.id.tv_toast_message).setText(message)
     setGravity(Gravity.BOTTOM,0,50)
     duration = Toast.LENGTH_SHORT
     view = layout

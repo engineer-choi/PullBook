@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">PullBook</string>
 
+    <!--activity_main-->
+    <string name="read_book">책 읽기</string>책 읽기서재책 소식환경설정
+    <string name="library">서재</string>
+    <string name="book_news">책 소식</string>
+    <string name="setting">환경설정</string>
 
     <!--activity_read_book 추후 로케일 적용하기-->
     <string name="tb_query">책 제목이 어떻게 되나요?</string>
@@ -8,7 +13,9 @@
 
     <!--activity_my_library-->
     <string name="et_search_book">책 제목 검색</string>
+    <string name="search_book_recommend">책을 검색하세요!</string>
 
     <!--activity_search_and_add_book-->
     <string name="btn_add_to_my_library">추가하기</string>
+    <string name="added_sentence">추가 되었습니다!</string>
 </resources>

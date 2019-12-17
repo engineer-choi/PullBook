@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_search_and_add_book"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_margin="16dp"
+    android:padding="8dp"
+    android:layout_margin="8dp"
     android:gravity="center"
+    android:background="@drawable/round_background"
     android:layout_height="wrap_content">
 
 
@@ -28,6 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Book Title"
+            android:fontFamily="@font/scdream"
+            android:textFontWeight="900"
             android:textStyle="bold"
             android:textSize="16dp"/>
         <TextView
@@ -35,7 +40,11 @@
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:fontFamily="@font/scdream"
+            android:ellipsize="end"
             android:text="Book summary"
+            android:textFontWeight="400"
             android:textSize="14dp"/>
         <RelativeLayout
             android:layout_marginTop="8dp"
@@ -43,15 +52,22 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/tv_book_author"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:fontFamily="@font/scdream"
+                android:layout_toLeftOf="@+id/btn_add_book"
                 android:text="Book author"
+                android:textFontWeight="400"
                 android:textSize="12dp"/>
             <Button
                 android:id="@+id/btn_add_book"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="32dp"
+                android:fontFamily="@font/scdream"
+                android:textFontWeight="400"
+                android:background="@drawable/round_button"
+                android:textColor="@color/white"
                 android:text="@string/btn_add_to_my_library"
                 android:layout_alignParentEnd="true"/>
         </RelativeLayout>
