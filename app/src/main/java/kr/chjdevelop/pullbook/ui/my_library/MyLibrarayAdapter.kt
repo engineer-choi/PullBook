@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kr.chjdevelop.pullbook.R
-import kr.chjdevelop.pullbook.data.SearchItem
-import kr.chjdevelop.pullbook.ui.search_and_add.SearchAndAddBookViewHolder
+import kr.chjdevelop.pullbook.data.MyBook
 
 class MyLibrarayAdapter (private val activity : Activity, private val context: Context): RecyclerView.Adapter<MyLibraryViewHolder>(){
 
-    var data = mutableListOf<SearchItem>()
+    var data = mutableListOf<MyBook>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyLibraryViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_library,parent,false)
         return MyLibraryViewHolder(

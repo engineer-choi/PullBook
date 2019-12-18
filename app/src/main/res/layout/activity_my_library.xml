@@ -28,7 +28,7 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:inputType="text"
-            android:hint="@string/et_search_book"/>
+            android:hint="@string/et_search_my_book"/>
         <ImageView
             android:id="@+id/img_my_book_search_btn"
             android:layout_width="wrap_content"
