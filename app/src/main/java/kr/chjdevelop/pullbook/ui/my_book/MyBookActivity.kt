@@ -1,4 +1,4 @@
-package kr.chjdevelop.pullbook.ui
+package kr.chjdevelop.pullbook.ui.my_book
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

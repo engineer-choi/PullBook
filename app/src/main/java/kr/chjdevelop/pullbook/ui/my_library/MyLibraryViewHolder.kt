@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kr.chjdevelop.pullbook.R
 import kr.chjdevelop.pullbook.data.MyBook
-import kr.chjdevelop.pullbook.ui.MyBookActivity
+import kr.chjdevelop.pullbook.ui.my_book.MyBookActivity
 
 class MyLibraryViewHolder (private val activity : Activity, view: View) : RecyclerView.ViewHolder(view) {
 
@@ -21,7 +21,8 @@ class MyLibraryViewHolder (private val activity : Activity, view: View) : Recycl
 
     fun bind(data: MyBook) {
         ll_item_library.setOnClickListener{
-            val intent = Intent(activity,MyBookActivity::class.java)
+            val intent = Intent(activity,
+                MyBookActivity::class.java)
             intent.putExtra("item_book_data",data)
             activity.startActivity(intent)
         }

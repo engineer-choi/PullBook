@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.MyBookActivity"></activity>
+        <activity android:name=".ui.my_book.MyBookActivity"></activity>
         <activity android:name=".ui.WebViewActivity" />
         <activity android:name=".ui.search_and_add.SearchAndAddBookActivity" />
         <activity android:name=".ui.my_library.MyLibraryActivity" />

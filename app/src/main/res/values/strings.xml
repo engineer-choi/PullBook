@@ -26,8 +26,12 @@
     <string name="added_sentence">추가 되었습니다!</string>
 
     <!--activity_my_book-->
-    <string name="alarm">알림</string>
+    <string name="alarm">Reminder</string>
     <string name="delete">삭제</string>
     <string name="deleted">삭제 되었습니다</string>
     <string name="description">요약</string>
+
+    <!--dialog_reminder-->
+    <string name="recommend">추천</string>
+
 </resources>
