@@ -3,12 +3,15 @@ package kr.chjdevelop.pullbook.ui.my_library
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_my_library.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 import kr.chjdevelop.pullbook.R
 import kr.chjdevelop.pullbook.data.MyBook
 import kr.chjdevelop.pullbook.data.MyBookDatabase
@@ -35,20 +38,18 @@ class MyLibraryActivity : AppCompatActivity() {
     }
     private fun setDB(){
         //DB의 데이터를 불러올 떄는 메인 스레드가 아닌 서브 스레드가 수행하도록 처리해주어야 한다.
-        val r = Runnable {
-            //데이터 불러오기 작업 할 Runnable객체
+        val run = Runnable {
             my_book_list = my_book_DB?.myBookDao()?.getAll()!!
-            runOnUiThread{
-                if (my_book_list.size!=0) {
+            if (my_book_list.isNotEmpty()){
+                runOnUiThread{
                     rv_my_library_reading.visibility= View.VISIBLE
                     tv_add_recommend.visibility = View.GONE
-                    Log.d("hj", my_book_list.toString())
                     myLibrarayAdapter.data = my_book_list
                     myLibrarayAdapter.notifyDataSetChanged()
                 }
             }
         }
-        val thread = Thread(r)
+        val thread = Thread(run)
         thread.start()
     }
     private fun init(){
@@ -87,19 +88,28 @@ class MyLibraryActivity : AppCompatActivity() {
             )
             myLibrarayAdapter.data.add(myBook)
             addToDataBase(myBook)
-            myLibrarayAdapter.notifyDataSetChanged()
             rv_my_library_reading.visibility= View.VISIBLE
             tv_add_recommend.visibility = View.GONE
         }
     }
+
     private fun addToDataBase(myBook: MyBook){
-        val r = Runnable {
-            //데이터 불러오기 작업 할 Runnable객체
+        val run = Runnable {
             my_book_DB?.myBookDao()?.insert(myBook)
+            runOnUiThread{
+                myLibrarayAdapter.notifyDataSetChanged()
+            }
         }
-        val thread = Thread(r)
+        val thread = Thread(run)
         thread.start()
+
     }
+    //val r = Runnable {
+    //            //데이터 불러오기 작업 할 Runnable객체
+    //
+    //        }
+    //        val thread = Thread(r)
+    //        thread.start()
 
     override fun onResume() {
         setDB()
