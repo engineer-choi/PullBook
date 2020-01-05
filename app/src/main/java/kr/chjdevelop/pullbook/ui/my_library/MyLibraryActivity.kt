@@ -93,6 +93,8 @@ class MyLibraryActivity : AppCompatActivity() {
         }
     }
 
+    //한번만 잔디심기 위한 양아치짓을 해봅니다..
+
     private fun addToDataBase(myBook: MyBook){
         val run = Runnable {
             my_book_DB?.myBookDao()?.insert(myBook)
