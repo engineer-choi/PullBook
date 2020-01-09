@@ -6,11 +6,11 @@
     android:paddingRight="16dp"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
-    android:background="@drawable/toast_round_background"
+    android:background="@drawable/gradient_background"
     android:id="@+id/blue_toast_container">
     <ImageView
         android:id="@+id/img_toast"
-        android:src="@drawable/ic_bookmark"
+        android:src="@drawable/ic_check"
         android:layout_width="24dp"
         android:layout_centerVertical="true"
         android:layout_height="24dp"/>
@@ -21,10 +21,12 @@
         android:layout_marginLeft="16dp"
         android:id="@+id/tv_toast_message"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/ko_pub"
+        android:textFontWeight="900"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="토스트에 해당하는 메세지 부분입니다"
-        android:textColor="@color/white"
+        android:textColor="@color/colorWhite"
         android:layout_centerVertical="true" />
     <ImageView
         android:id="@+id/img_close"

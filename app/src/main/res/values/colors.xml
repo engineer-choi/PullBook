@@ -3,45 +3,36 @@
 
 
 
-    <color name="colorPrimary">#925e47</color>
-    <color name="colorPrimaryDark">#753625</color>
-    <color name="dark">#493932</color>
-    <color name="whiteprimary">#b69075</color>
-    <color name="grey">#a6a9a8</color>
-    <color name="darkyellow">#edcdaa</color>
-    <color name="colorAccent">#ff0000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#3e3e3e</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorForTextView">#414141</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#171717</color>
 
-
-    <color name="colorPastelPink">#f681a3</color>
-    <color name="colorSky">#76e5e6</color>
-    <color name="colorRym">#add673</color>
-    <color name="whiteGrey">#8B8B8B</color>
-    <color name="darkgrey">#393939</color>
-    <color name="transparent">#00000000</color>
-    <color name="red">#FF0000</color>
-    <color name="red_google">#BC1604</color>
-    <color name="blue_facebook">#5882FA</color>
-    <color name="blue">#0000FF</color>
-    <color name="supergrey">#F7F6F6</color>
-    <color name="orange">#DF7401</color>
-    <color name="item_color">#ffe699</color>
-    <color name="efficiency_color">#ffc000</color>
-    <color name="orangey_red">#ff3b30</color>
-    <color name="warm_blue">#5856d6</color>
-    <color name="tangerine">#ff9500</color>
-    <color name="deep_sky_blue">#007aff</color>
-    <color name="marigold">#ffcc00</color>
-    <color name="robin_s_egg">#5ac8fa</color>
-    <color name="weird_green">#4cd964</color>
-    <color name="reddish_pink">#ff2d55</color>
-    <color name="pale_grey">#efeff4</color>
-    <color name="pale_lilac">#e5e5ea</color>
-    <color name="light_blue_grey1">#d1d1d6</color>
-    <color name="light_blue_grey2">#c7c7cc</color>
-    <color name="blue_grey">#8e8e93</color>
-    <color name="black">#000000</color>
-    <color name="charcoal_grey">#393c41</color>
-    <color name="lipstick">#d01235</color>
-    <color name="darkish_green">#378439</color>
+    <color name="colorButtonBlack">#191919</color>
+    <color name="colorStar">#f5ca3c</color>
+    <color name="colorWhiteGray">#f8f8f8</color>
+    <color name="colorButtonDisAble">#26191919</color>
+    <color name="colorGenderGrayText">#59414141</color>
+    <color name="colorProgress">#333333</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorLightGrey">#b7b7b7</color>
+    <color name="colorTextBlack">#343434</color>
+    <color name="colorCharcoal">#2d2d2d</color>
+    <color name="colorMiddleLightGrey">#aaaaaa</color>
+    <color name="colorBeige">#f2e3c4</color>
+    <color name="colorBrown">#a04612</color>
+    <color name="colorChorale">#f0324c</color>
+    <color name="colorOrange">#f3a622</color>
+    <color name="colorDarkGreen">#7a863c</color>
+    <color name="colorLightBlue">#3168f6</color>
+    <color name="colorDarkBlue">#0b3395</color>
+    <color name="colorPurple">#9935e3</color>
+    <color name="colorPink">#ff598b</color>
+    <color name="colorMagenta">#fa1f93</color>
+    <color name="colorLightWhiteGrey">#f4f4f4</color>
+    <color name="colorCharcoalGrey">#707070</color>
+    <color name="colorCharcoalBlur">#E62D2D2D</color>
 </resources>

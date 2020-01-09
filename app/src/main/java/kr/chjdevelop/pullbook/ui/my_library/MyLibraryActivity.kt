@@ -60,8 +60,7 @@ class MyLibraryActivity : AppCompatActivity() {
         img_add_to_library.setOnClickListener{
             val intent = Intent(this, SearchAndAddBookActivity::class.java)
             startActivityForResult(intent,100)
-            toast = Toast.makeText(this,"",Toast.LENGTH_SHORT)
-            toast.sendToast(this,R.string.search_book_recommend)
+            sendToast(R.string.search_book_recommend)
         }
     }
     private fun setAdapter(){
@@ -93,9 +92,6 @@ class MyLibraryActivity : AppCompatActivity() {
         }
     }
 
-    //한번만 잔디심기 위한 양아치짓을 해봅니다..
-    //독감걸려서 양해 부탁드립니다..
-
     private fun addToDataBase(myBook: MyBook){
         val run = Runnable {
             my_book_DB?.myBookDao()?.insert(myBook)
@@ -107,13 +103,6 @@ class MyLibraryActivity : AppCompatActivity() {
         thread.start()
 
     }
-    //val r = Runnable {
-    //            //데이터 불러오기 작업 할 Runnable객체
-    //
-    //        }
-    //        val thread = Thread(r)
-    //        thread.start()
-
     override fun onResume() {
         setDB()
         super.onResume()
