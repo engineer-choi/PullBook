@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.MainActivity">
+    <!--전체 UI 수정 필요-->
             <RelativeLayout
                 android:id="@+id/rl_read_book"
                 android:layout_width="match_parent"
